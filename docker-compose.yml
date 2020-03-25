@@ -5,7 +5,17 @@ services:
     image: jupyter/pyspark-notebook:latest
     ports:
       - 8888:8888
+      - 4040:4040
     volumes:
       - ./work:/home/jovyan/work
     working_dir: /home/jovyan/work
     command: jupyter lab
+  etl:
+    image: jupyter/pyspark-notebook:latest
+    ports:
+      - 8888:8888
+      - 4040:4040
+    volumes:
+      - ./work:/home/jovyan/work
+    working_dir: /home/jovyan/work
+    command:

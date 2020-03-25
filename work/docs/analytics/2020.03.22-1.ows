@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="csse_covid_19_daily_reports" version="2.0">
+	<nodes>
+		<node id="0" name="CSV File Import" position="(-1.0, -300.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" title="CSV File Import" version="" />
+		<node id="1" name="CSV File Import" position="(0, -150)" project_name="Orange3" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" title="CSV File Import (1)" version="" />
+		<node id="2" name="CSV File Import" position="(0, 0)" project_name="Orange3" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" title="CSV File Import (2)" version="" />
+		<node id="3" name="CSV File Import" position="(-3.0, 46.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" title="CSV File Import (3)" version="" />
+		<node id="4" name="Edit Domain" position="(150, -150)" project_name="Orange3" qualified_name="Orange.widgets.data.oweditdomain.OWEditDomain" title="Edit Domain" version="" />
+		<node id="5" name="Concatenate" position="(150, 0)" project_name="Orange3" qualified_name="Orange.widgets.data.owconcatenate.OWConcatenate" title="Concatenate" version="" />
+		<node id="6" name="Feature Constructor" position="(300, -150)" project_name="Orange3" qualified_name="Orange.widgets.data.owfeatureconstructor.OWFeatureConstructor" title="Feature Constructor" version="" />
+		<node id="7" name="Select Columns" position="(300, 0)" project_name="Orange3" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" title="Select Columns" version="" />
+		<node id="8" name="Interpolate" position="(450, -150)" project_name="Orange3-Timeseries" qualified_name="orangecontrib.timeseries.widgets.owinterpolate.OWInterpolate" title="Interpolate" version="" />
+		<node id="9" name="Aggregate" position="(600, -150)" project_name="Orange3-Timeseries" qualified_name="orangecontrib.timeseries.widgets.owaggregate.OWAggregate" title="Aggregate" version="" />
+		<node id="10" name="Distances" position="(450, -300)" project_name="Orange3" qualified_name="Orange.widgets.unsupervised.owdistances.OWDistances" title="Distances" version="" />
+		<node id="11" name="Line Chart" position="(900, 0)" project_name="Orange3-Timeseries" qualified_name="orangecontrib.timeseries.widgets.owlinechart.OWLineChart" title="Line Chart" version="" />
+		<node id="12" name="ARIMA Model" position="(750, 0)" project_name="Orange3-Timeseries" qualified_name="orangecontrib.timeseries.widgets.owarimamodel.OWARIMAModel" title="ARIMA Model" version="" />
+		<node id="13" name="VAR Model" position="(600, 150)" project_name="Orange3-Timeseries" qualified_name="orangecontrib.timeseries.widgets.owvarmodel.OWVARModel" title="VAR Model" version="" />
+		<node id="14" name="Outliers" position="(300, -300)" project_name="Orange3" qualified_name="Orange.widgets.data.owoutliers.OWOutliers" title="Outliers" version="" />
+		<node id="15" name="Distributions" position="(600, 0)" project_name="Orange3" qualified_name="Orange.widgets.visualize.owdistributions.OWDistributions" title="Distributions" version="" />
+		<node id="16" name="CSV File Import" position="(1.0, 177.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" title="CSV File Import (4)" version="" />
+		<node id="17" name="Feature Constructor" position="(91.0, 408.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owfeatureconstructor.OWFeatureConstructor" title="Feature Constructor (1)" version="" />
+		<node id="18" name="As Timeseries" position="(248.0, 408.0)" project_name="Orange3-Timeseries" qualified_name="orangecontrib.timeseries.widgets.owtabletotimeseries.OWTableToTimeseries" title="As Timeseries" version="" />
+		<node id="19" name="Interpolate" position="(341.0, 320.0)" project_name="Orange3-Timeseries" qualified_name="orangecontrib.timeseries.widgets.owinterpolate.OWInterpolate" title="Interpolate (1)" version="" />
+		<node id="20" name="Aggregate" position="(424.0, 412.0)" project_name="Orange3-Timeseries" qualified_name="orangecontrib.timeseries.widgets.owaggregate.OWAggregate" title="Aggregate (1)" version="" />
+		<node id="21" name="Line Chart" position="(719.0, 405.0)" project_name="Orange3-Timeseries" qualified_name="orangecontrib.timeseries.widgets.owlinechart.OWLineChart" title="Line Chart (1)" version="" />
+		<node id="22" name="Select Columns" position="(170.0, 307.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owselectcolumns.OWSelectAttributes" title="Select Columns (1)" version="" />
+		<node id="23" name="ARIMA Model" position="(539.0, 468.0)" project_name="Orange3-Timeseries" qualified_name="orangecontrib.timeseries.widgets.owarimamodel.OWARIMAModel" title="ARIMA Model (1)" version="" />
+		<node id="24" name="VAR Model" position="(561.0, 321.0)" project_name="Orange3-Timeseries" qualified_name="orangecontrib.timeseries.widgets.owvarmodel.OWVARModel" title="VAR Model (1)" version="" />
+		<node id="25" name="CSV File Import" position="(8.0, 414.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owcsvimport.OWCSVFileImport" title="CSV File Import (5)" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="Additional Data" sink_node_id="5" source_channel="Data" source_node_id="0" />
+		<link enabled="true" id="1" sink_channel="Additional Data" sink_node_id="5" source_channel="Data" source_node_id="1" />
+		<link enabled="true" id="2" sink_channel="Additional Data" sink_node_id="5" source_channel="Data" source_node_id="2" />
+		<link enabled="true" id="3" sink_channel="Additional Data" sink_node_id="5" source_channel="Data" source_node_id="3" />
+		<link enabled="true" id="4" sink_channel="Data" sink_node_id="4" source_channel="Data" source_node_id="5" />
+		<link enabled="true" id="5" sink_channel="Data" sink_node_id="6" source_channel="Data" source_node_id="4" />
+		<link enabled="true" id="6" sink_channel="Data" sink_node_id="7" source_channel="Data" source_node_id="6" />
+		<link enabled="true" id="7" sink_channel="Time series" sink_node_id="8" source_channel="Data" source_node_id="7" />
+		<link enabled="true" id="8" sink_channel="Time series" sink_node_id="9" source_channel="Interpolated time series" source_node_id="8" />
+		<link enabled="true" id="9" sink_channel="Data" sink_node_id="10" source_channel="Time series" source_node_id="9" />
+		<link enabled="true" id="10" sink_channel="Time series" sink_node_id="11" source_channel="Time series" source_node_id="9" />
+		<link enabled="true" id="11" sink_channel="Time series" sink_node_id="12" source_channel="Time series" source_node_id="9" />
+		<link enabled="true" id="12" sink_channel="Forecast" sink_node_id="11" source_channel="Forecast" source_node_id="12" />
+		<link enabled="true" id="13" sink_channel="Time series" sink_node_id="13" source_channel="Time series" source_node_id="9" />
+		<link enabled="true" id="14" sink_channel="Forecast" sink_node_id="11" source_channel="Forecast" source_node_id="13" />
+		<link enabled="true" id="15" sink_channel="Data" sink_node_id="14" source_channel="Interpolated time series" source_node_id="8" />
+		<link enabled="true" id="16" sink_channel="Data" sink_node_id="15" source_channel="Interpolated time series" source_node_id="8" />
+		<link enabled="true" id="17" sink_channel="Time series" sink_node_id="19" source_channel="Time series" source_node_id="18" />
+		<link enabled="true" id="18" sink_channel="Time series" sink_node_id="20" source_channel="Interpolated time series" source_node_id="19" />
+		<link enabled="true" id="19" sink_channel="Time series" sink_node_id="21" source_channel="Time series" source_node_id="20" />
+		<link enabled="true" id="20" sink_channel="Forecast" sink_node_id="21" source_channel="Forecast" source_node_id="23" />
+		<link enabled="true" id="21" sink_channel="Forecast" sink_node_id="21" source_channel="Forecast" source_node_id="24" />
+		<link enabled="true" id="22" sink_channel="Data" sink_node_id="22" source_channel="Data" source_node_id="17" />
+		<link enabled="true" id="23" sink_channel="Data" sink_node_id="18" source_channel="Data" source_node_id="22" />
+		<link enabled="true" id="24" sink_channel="Time series" sink_node_id="24" source_channel="Time series" source_node_id="20" />
+		<link enabled="true" id="25" sink_channel="Time series" sink_node_id="23" source_channel="Time series" source_node_id="20" />
+		<link enabled="true" id="26" sink_channel="Data" sink_node_id="17" source_channel="Data" source_node_id="25" />
+		<link enabled="true" id="27" sink_channel="Additional Data" sink_node_id="5" source_channel="Data" source_node_id="16" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="literal" node_id="0">{'_session_items': [('/Users/zacharywilson/Projects/repos/pandemic/work/samples/jobs.csse_covid_19_daily_reports.csv/part-00003-7443deab-e856-470e-937b-8bb9e826879a-c000.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('/Users/zacharywilson/Projects/repos/pandemic/work/samples/jobs.csse_covid_19_daily_reports.csv/part-00003-6456cdc9-89f2-4af6-af05-f0361fee0836-c000.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('/Users/zacharywilson/Projects/repos/pandemic/work/samples/csse_covid_19_daily_reports.csv/part-00003-3fc99477-8462-42bc-ba9c-e658cc083435-c000.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('/Users/zacharywilson/Projects/repos/pandemic/work/samples/output-files/csse_covid_19_daily_reports.csv/part-00003-57c068c9-a601-4449-8ff6-aec3f9953fdc-c000.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'controlAreaVisible': True, 'dialog_state': {'directory': '/Users/zacharywilson/Projects/repos/pandemic/work/samples/jobs.csse_covid_19_daily_reports.csv', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02#\x00\x00\x00\xf8\x00\x00\x03h\x00\x00\x02g\x00\x00\x02#\x00\x00\x01\x0e\x00\x00\x03h\x00\x00\x02g\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0\x00\x00\x02#\x00\x00\x01\x0e\x00\x00\x03h\x00\x00\x02g', '__version__': 1}</properties>
+		<properties format="literal" node_id="1">{'_session_items': [('/Users/zacharywilson/Projects/repos/pandemic/work/samples/jobs.csse_covid_19_daily_reports.csv/part-00002-7443deab-e856-470e-937b-8bb9e826879a-c000.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('/Users/zacharywilson/Projects/repos/pandemic/work/samples/jobs.csse_covid_19_daily_reports.csv/part-00002-6456cdc9-89f2-4af6-af05-f0361fee0836-c000.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('/Users/zacharywilson/Projects/repos/pandemic/work/samples/output-files/csse_covid_19_daily_reports.csv/part-00002-411d477d-2e1f-422b-b8c9-0569c0efbaa0-c000.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('/Users/zacharywilson/Projects/repos/pandemic/work/samples/output-files/csse_covid_19_daily_reports.csv/part-00003-57c068c9-a601-4449-8ff6-aec3f9953fdc-c000.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'controlAreaVisible': True, 'dialog_state': {'directory': '/Users/zacharywilson/Projects/repos/pandemic/work/samples/jobs.csse_covid_19_daily_reports.csv', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02#\x00\x00\x00\xf8\x00\x00\x03h\x00\x00\x02g\x00\x00\x02#\x00\x00\x01\x0e\x00\x00\x03h\x00\x00\x02g\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0\x00\x00\x02#\x00\x00\x01\x0e\x00\x00\x03h\x00\x00\x02g', '__version__': 1}</properties>
+		<properties format="literal" node_id="2">{'_session_items': [('/Users/zacharywilson/Projects/repos/pandemic/work/samples/jobs.csse_covid_19_daily_reports.csv/part-00001-7443deab-e856-470e-937b-8bb9e826879a-c000.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('/Users/zacharywilson/Projects/repos/pandemic/work/samples/jobs.csse_covid_19_daily_reports.csv/part-00001-6456cdc9-89f2-4af6-af05-f0361fee0836-c000.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('/Users/zacharywilson/Projects/repos/pandemic/work/samples/output-files/csse_covid_19_daily_reports.csv/part-00001-411d477d-2e1f-422b-b8c9-0569c0efbaa0-c000.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('/Users/zacharywilson/Projects/repos/pandemic/work/samples/output-files/csse_covid_19_daily_reports.csv/part-00003-57c068c9-a601-4449-8ff6-aec3f9953fdc-c000.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'controlAreaVisible': True, 'dialog_state': {'directory': '/Users/zacharywilson/Projects/repos/pandemic/work/samples/jobs.csse_covid_19_daily_reports.csv', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02#\x00\x00\x00\xf8\x00\x00\x03h\x00\x00\x02g\x00\x00\x02#\x00\x00\x01\x0e\x00\x00\x03h\x00\x00\x02g\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0\x00\x00\x02#\x00\x00\x01\x0e\x00\x00\x03h\x00\x00\x02g', '__version__': 1}</properties>
+		<properties format="literal" node_id="3">{'_session_items': [('/Users/zacharywilson/Projects/repos/pandemic/work/samples/jobs.csse_covid_19_daily_reports.csv/part-00000-7443deab-e856-470e-937b-8bb9e826879a-c000.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('/Users/zacharywilson/Projects/repos/pandemic/work/samples/jobs.csse_covid_19_daily_reports.csv/part-00000-6456cdc9-89f2-4af6-af05-f0361fee0836-c000.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('/Users/zacharywilson/Projects/repos/pandemic/work/samples/output-files/csse_covid_19_daily_reports.csv/part-00000-411d477d-2e1f-422b-b8c9-0569c0efbaa0-c000.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('/Users/zacharywilson/Projects/repos/pandemic/work/samples/output-files/csse_covid_19_daily_reports.csv/part-00003-57c068c9-a601-4449-8ff6-aec3f9953fdc-c000.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'controlAreaVisible': True, 'dialog_state': {'directory': '/Users/zacharywilson/Projects/repos/pandemic/work/samples/jobs.csse_covid_19_daily_reports.csv', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02#\x00\x00\x00\xf8\x00\x00\x03h\x00\x00\x02g\x00\x00\x02#\x00\x00\x01\x0e\x00\x00\x03h\x00\x00\x02g\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0\x00\x00\x02#\x00\x00\x01\x0e\x00\x00\x03h\x00\x00\x02g', '__version__': 1}</properties>
+		<properties format="pickle" node_id="4">gAN9cQAoWBIAAABjb250cm9sQXJlYVZpc2libGVxAYhYEwAAAHNhdmVkV2lkZ2V0R2VvbWV0cnlx
+AkNCAdnQywADAAAAAAF8AAAAegAABA8AAALmAAABfAAAAJAAAAQPAAAC5gAAAAAAAAAABaAAAAF8
+AAAAkAAABA8AAALmcQNYCwAAAF9fdmVyc2lvbl9fcQRLAlgQAAAAY29udGV4dF9zZXR0aW5nc3EF
+XXEGKGNvcmFuZ2V3aWRnZXQuc2V0dGluZ3MKQ29udGV4dApxBymBcQh9cQkoWAQAAAB0aW1lcQpH
+QdeeVHke7gdYBgAAAHZhbHVlc3ELfXEMKFgUAAAAX2RvbWFpbl9jaGFuZ2Vfc3RvcmVxDX1xDihY
+BgAAAFN0cmluZ3EPWAsAAABMYXN0IFVwZGF0ZXEQKYZxEYZxEl1xE1gGAAAAQXNUaW1lcRQphnEV
+YVgGAAAAU3RyaW5ncRZYDgAAAENvdW50cnkvUmVnaW9ucRcphnEYhnEZXXEaWA0AAABBc0NhdGVn
+b3JpY2FscRsphnEcYVgGAAAAU3RyaW5ncR1YDgAAAFByb3ZpbmNlL1N0YXRlcR4phnEfhnEgXXEh
+WA0AAABBc0NhdGVnb3JpY2FscSIphnEjYXVK/v///4ZxJFgOAAAAX3NlbGVjdGVkX2l0ZW1xJVgL
+AAAATGFzdCBVcGRhdGVxJksDhnEnaARLAnVYCgAAAGF0dHJpYnV0ZXNxKH1xKShYCQAAAENvbmZp
+cm1lZHEqSwJYCQAAAFJlY292ZXJlZHErSwJYBgAAAERlYXRoc3EsSwJYCAAAAExhdGl0dWRlcS1L
+AlgJAAAATG9uZ2l0dWRlcS5LAnVYBQAAAG1ldGFzcS99cTAoaCZLA1gOAAAAQ291bnRyeS9SZWdp
+b25xMUsDWA4AAABQcm92aW5jZS9TdGF0ZXEySwNYEQAAAGlucHV0X2ZpbGVfbmFtZSgpcTNLA1gJ
+AAAAU291cmNlIElEcTRLAXV1YmgHKYFxNX1xNihoCkdB155UOryqemgLfXE3KGgNfXE4KGgSXXE5
+aBVhaBldcTpoHGFoIF1xO2gjYXVK/v///4ZxPGglaCZLA4ZxPWgESwJ1aCh9cT4oaCpLAmgrSwJo
+LEsCaC1LAmguSwJ1aC99cT8oaCZLA2gxSwNoMksDaDNLA3V1YmV1Lg==
+</properties>
+		<properties format="literal" node_id="5">{'append_source_column': True, 'auto_commit': True, 'controlAreaVisible': True, 'merge_type': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\x14\x00\x00\x00\xfe\x00\x00\x03x\x00\x00\x02_\x00\x00\x02\x14\x00\x00\x01\x15\x00\x00\x03x\x00\x00\x02`\x00\x00\x00\x00\x02\x00\x00\x00\x05\xa0\x00\x00\x02\x14\x00\x00\x01\x14\x00\x00\x03x\x00\x00\x02_', 'source_attr_name': 'Source ID', 'source_column_role': 2, '__version__': 1}</properties>
+		<properties format="pickle" node_id="6">gAN9cQAoWBIAAABjb250cm9sQXJlYVZpc2libGVxAYhYEwAAAHNhdmVkV2lkZ2V0R2VvbWV0cnlx
+AkNCAdnQywADAAAAAAGoAAAA2gAAA+MAAAKGAAABqAAAAPAAAAPjAAAChgAAAAAAAAAABaAAAAGo
+AAAA8AAAA+MAAAKGcQNYCwAAAF9fdmVyc2lvbl9fcQRLAVgQAAAAY29udGV4dF9zZXR0aW5nc3EF
+XXEGKGNvcmFuZ2V3aWRnZXQuc2V0dGluZ3MKQ29udGV4dApxBymBcQh9cQkoWAQAAAB0aW1lcQpH
+QdeeVH5Kg8tYBgAAAHZhbHVlc3ELfXEMKFgMAAAAY3VycmVudEluZGV4cQ1LAEr+////hnEOWAsA
+AABkZXNjcmlwdG9yc3EPXXEQY09yYW5nZS53aWRnZXRzLmRhdGEub3dmZWF0dXJlY29uc3RydWN0
+b3IKQ29udGludW91c0Rlc2NyaXB0b3IKcRFYBgAAAEFjdGl2ZXESWCAAAABDb25maXJtZWQgLSAo
+RGVhdGhzICsgUmVjb3ZlcmVkKXETSwOHcRSBcRVhaARLAXVYCgAAAGF0dHJpYnV0ZXNxFn1xFyhY
+CQAAAENvbmZpcm1lZHEYSwJYCQAAAFJlY292ZXJlZHEZSwJYBgAAAERlYXRoc3EaSwJYCAAAAExh
+dGl0dWRlcRtLAlgJAAAATG9uZ2l0dWRlcRxLAnVYBQAAAG1ldGFzcR19cR4oWAsAAABMYXN0IFVw
+ZGF0ZXEfSwRYDgAAAENvdW50cnkvUmVnaW9ucSBLAVgOAAAAUHJvdmluY2UvU3RhdGVxIUsBWBEA
+AABpbnB1dF9maWxlX25hbWUoKXEiSwNYCQAAAFNvdXJjZSBJRHEjSwF1dWJoBymBcSR9cSUoaApH
+QdeeVGDK+w1oC31xJihoDUsASv7///+GcSdoD11xKGgRaBJoE0sDh3EpgXEqYWgESwF1aBZ9cSso
+aBhLAmgZSwJoGksCaBtLAmgcSwJ1aB19cSwoaB9LBGggSwFoIUsBaCJLA3V1YmV1Lg==
+</properties>
+		<properties format="pickle" node_id="7">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgSAAAAY29udHJvbEFyZWFWaXNpYmxlcQKIWBMAAABz
+YXZlZFdpZGdldEdlb21ldHJ5cQNDQgHZ0MsAAwAAAAABmgAAAHkAAAPxAAAC5gAAAZoAAACPAAAD
+8QAAAuYAAAAAAAAAAAWgAAABmgAAAI8AAAPxAAAC5nEEWBIAAAB1c2VfaW5wdXRfZmVhdHVyZXNx
+BYlYCwAAAF9fdmVyc2lvbl9fcQZLAVgQAAAAY29udGV4dF9zZXR0aW5nc3EHXXEIY29yYW5nZXdp
+ZGdldC5zZXR0aW5ncwpDb250ZXh0CnEJKYFxCn1xCyhYBAAAAHRpbWVxDEdB155wC/mnTFgGAAAA
+dmFsdWVzcQ19cQ4oWBEAAABkb21haW5fcm9sZV9oaW50c3EPfXEQKFgOAAAAUHJvdmluY2UvU3Rh
+dGVxEUsBhnESWAkAAABhdmFpbGFibGVxE0sAhnEUWA4AAABDb3VudHJ5L1JlZ2lvbnEVSwGGcRZo
+E0sBhnEXWBEAAABpbnB1dF9maWxlX25hbWUoKXEYSwOGcRloE0sChnEaWAkAAABSZWNvdmVyZWRx
+G0sChnEcWAkAAABhdHRyaWJ1dGVxHUsAhnEeWAYAAABEZWF0aHNxH0sChnEgaB1LAYZxIVgJAAAA
+Q29uZmlybWVkcSJLAoZxI2gdSwKGcSRYCwAAAExhc3QgVXBkYXRlcSVLBIZxJmgdSwOGcSdYBgAA
+AEFjdGl2ZXEoSwKGcSlYBQAAAGNsYXNzcSpLAIZxK1gIAAAATGF0aXR1ZGVxLEsChnEtWAQAAABt
+ZXRhcS5LAIZxL1gJAAAATG9uZ2l0dWRlcTBLAoZxMWguSwGGcTJYCQAAAFNvdXJjZSBJRHEzSwGG
+cTRoLksChnE1dUr+////hnE2aAZLAXVYCgAAAGF0dHJpYnV0ZXNxN31xOChYCQAAAENvbmZpcm1l
+ZHE5SwJYCQAAAFJlY292ZXJlZHE6SwJYBgAAAERlYXRoc3E7SwJYCAAAAExhdGl0dWRlcTxLAlgJ
+AAAATG9uZ2l0dWRlcT1LAlgGAAAAQWN0aXZlcT5LAnVYBQAAAG1ldGFzcT99cUAoWAsAAABMYXN0
+IFVwZGF0ZXFBSwRYDgAAAENvdW50cnkvUmVnaW9ucUJLAVgOAAAAUHJvdmluY2UvU3RhdGVxQ0sB
+WBEAAABpbnB1dF9maWxlX25hbWUoKXFESwNYCQAAAFNvdXJjZSBJRHFFSwF1dWJhdS4=
+</properties>
+		<properties format="literal" node_id="8">{'autoapply': True, 'controlAreaVisible': True, 'interpolation': 'linear', 'multivariate': False, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02,\x00\x00\x01P\x00\x00\x03_\x00\x00\x02\x10\x00\x00\x02,\x00\x00\x01f\x00\x00\x03_\x00\x00\x02\x10\x00\x00\x00\x00\x02\x00\x00\x00\x05\xa0\x00\x00\x02,\x00\x00\x01f\x00\x00\x03_\x00\x00\x02\x10', '__version__': 1}</properties>
+		<properties format="literal" node_id="9">{'agg_attr': [], 'agg_func': 0, 'agg_interval': 'week', 'autocommit': True, 'ax1': 'months of year', 'ax2': 'years', 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02@\x00\x00\x01\x08\x00\x00\x03K\x00\x00\x02U\x00\x00\x02@\x00\x00\x01\x1e\x00\x00\x03K\x00\x00\x02U\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0\x00\x00\x02@\x00\x00\x01\x1e\x00\x00\x03K\x00\x00\x02U', '__version__': 1}</properties>
+		<properties format="literal" node_id="10">{'autocommit': True, 'axis': 0, 'controlAreaVisible': True, 'metric_idx': 0, 'normalized_dist': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02`\x00\x00\x01G\x00\x00\x03&gt;\x00\x00\x02=\x00\x00\x02W\x00\x00\x015\x00\x00\x035\x00\x00\x02+\x00\x00\x00\x00\x00\x04\x00\x00\x05\xa0\x00\x00\x02`\x00\x00\x01G\x00\x00\x03&gt;\x00\x00\x02=', '__version__': 3}</properties>
+		<properties format="literal" node_id="11">{'attrs': {}, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x05\x9f\x00\x00\x03\x83\x00\x00\x00\x00\x00\x00\x00+\x00\x00\x05\x9f\x00\x00\x03\xae\x00\x00\x00\x00\x02\x00\x00\x00\x05\xa0\x00\x00\x00\x00\x00\x00\x00-\x00\x00\x05\x9f\x00\x00\x03\x83', '__version__': 1}</properties>
+		<properties format="literal" node_id="12">{'autocommit': True, 'controlAreaVisible': True, 'd': 0, 'forecast_confint': 95, 'forecast_steps': 10, 'learner_name': '', 'p': 1, 'q': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\x1a\x00\x00\x00\xf0\x00\x00\x03r\x00\x00\x02p\x00\x00\x02\x1a\x00\x00\x01\x06\x00\x00\x03r\x00\x00\x02p\x00\x00\x00\x00\x02\x00\x00\x00\x05\xa0\x00\x00\x02\x1a\x00\x00\x01\x06\x00\x00\x03r\x00\x00\x02p', 'use_exog': False, '__version__': 1}</properties>
+		<properties format="literal" node_id="13">{'autocommit': True, 'controlAreaVisible': True, 'forecast_confint': 99, 'forecast_steps': 10, 'ic': 0, 'learner_name': '', 'maxlags': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x026\x00\x00\x00y\x00\x00\x03U\x00\x00\x02\xe6\x00\x00\x026\x00\x00\x00\x8f\x00\x00\x03U\x00\x00\x02\xe6\x00\x00\x00\x00\x02\x00\x00\x00\x05\xa0\x00\x00\x026\x00\x00\x00\x8f\x00\x00\x03U\x00\x00\x02\xe6', 'trend': 0, '__version__': 1}</properties>
+		<properties format="literal" node_id="14">{'cont': 10, 'controlAreaVisible': True, 'empirical_covariance': False, 'gamma': 0.01, 'nu': 50, 'outlier_method': 0, 'savedWidgetGeometry': None, 'support_fraction': 1, '__version__': 1}</properties>
+		<properties format="pickle" node_id="15">gAN9cQAoWAoAAABhdXRvX2FwcGx5cQGIWBIAAABjb250cm9sQXJlYVZpc2libGVxAohYEAAAAGN1
+bXVsYXRpdmVfZGlzdHJxA4hYEwAAAGZpdHRlZF9kaXN0cmlidXRpb25xBEsHWAkAAABoaWRlX2Jh
+cnNxBYlYDQAAAGtkZV9zbW9vdGhpbmdxBksKWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cQdDQgHZ
+0MsAAwAAAAAAAAAAAAAAAAWfAAADgwAAAAAAAAAAAAAFnwAAA4MAAAAAAAQAAAWgAAAAAAAAAAAA
+AAWfAAADg3EIWAoAAABzaG93X3Byb2JzcQmIWA8AAABzdGFja2VkX2NvbHVtbnNxColYCwAAAF9f
+dmVyc2lvbl9fcQtLAVgQAAAAY29udGV4dF9zZXR0aW5nc3EMXXENKGNvcmFuZ2V3aWRnZXQuc2V0
+dGluZ3MKQ29udGV4dApxDimBcQ99cRAoWAQAAAB0aW1lcRFHQdeecBoPoPBYBgAAAHZhbHVlc3ES
+fXETKFgEAAAAY3ZhcnEUWAkAAABTb3VyY2UgSURxFUtlhnEWWA4AAABudW1iZXJfb2ZfYmluc3EX
+SwJK/v///4ZxGFgJAAAAc2VsZWN0aW9ucRljYnVpbHRpbnMKc2V0CnEaXXEbhXEcUnEdSv7///+G
+cR5YAwAAAHZhcnEfWAsAAABMYXN0IFVwZGF0ZXEgS2iGcSFoC0sBdVgKAAAAYXR0cmlidXRlc3Ei
+fXEjKFgJAAAAUmVjb3ZlcmVkcSRLAlgGAAAARGVhdGhzcSVLAlgGAAAAQWN0aXZlcSZLAmggSwRY
+CQAAAENvbmZpcm1lZHEnSwJ1WAUAAABtZXRhc3EofXEpKFgIAAAATGF0aXR1ZGVxKksCWAkAAABM
+b25naXR1ZGVxK0sCaBVLAXV1YmgOKYFxLH1xLShoEUdB155wEyWU/2gSfXEuKGgUaBVLZYZxL2gX
+SwJK/v///4ZxMGgZaBpdcTGFcTJScTNK/v///4ZxNGgfaCBLaIZxNWgLSwF1aCJ9cTYoaCRLAmgl
+SwJoJksCaCBLBGgnSwJ1aCh9cTcoaCpLAmgrSwJYEQAAAGlucHV0X2ZpbGVfbmFtZSgpcThLA2gV
+SwF1dWJoDimBcTl9cTooaBFHQdeecBCjmMxoEn1xOyhoFGgVS2WGcTxoF0sCSv7///+GcT1oGWga
+XXE+hXE/UnFASv7///+GcUFoH2ggS2iGcUJoC0sBdWgifXFDKGgkSwJoJUsCaCZLAmggSwRoJ0sC
+dWgofXFEKGgqSwJoK0sCWA4AAABDb3VudHJ5L1JlZ2lvbnFFSwFoOEsDaBVLAXV1YmgOKYFxRn1x
+RyhoEUdB155wDPCteWgSfXFIKGgUaBVLZYZxSWgXSwJK/v///4ZxSmgZaBpdcUuFcUxScU1K/v//
+/4ZxTmgfaCBLaIZxT2gLSwF1aCJ9cVAoWAkAAABSZWNvdmVyZWRxUUsCWAYAAABEZWF0aHNxUksC
+WAYAAABBY3RpdmVxU0sCWAsAAABMYXN0IFVwZGF0ZXFUSwRYCQAAAENvbmZpcm1lZHFVSwJ1aCh9
+cVYoWAgAAABMYXRpdHVkZXFXSwJYCQAAAExvbmdpdHVkZXFYSwJYDgAAAENvdW50cnkvUmVnaW9u
+cVlLAVgOAAAAUHJvdmluY2UvU3RhdGVxWksBWBEAAABpbnB1dF9maWxlX25hbWUoKXFbSwNYCQAA
+AFNvdXJjZSBJRHFcSwF1dWJldS4=
+</properties>
+		<properties format="literal" node_id="16">{'_session_items': [('/Users/zacharywilson/Projects/repos/pandemic/work/samples/jobs.csse_covid_19_daily_reports.csv/part-00000-7443deab-e856-470e-937b-8bb9e826879a-c000.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('/Users/zacharywilson/Projects/repos/pandemic/work/samples/jobs.csse_covid_19_time_series.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Skip'}, {'start': 1, 'stop': 3, 'value': 'Categorical'}, {'start': 3, 'stop': 5, 'value': 'Numeric'}, {'start': 5, 'stop': 6, 'value': 'Time'}, {'start': 6, 'stop': 9, 'value': 'Numeric'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'controlAreaVisible': True, 'dialog_state': {'directory': '/Users/zacharywilson/Projects/repos/pandemic/work/samples/jobs.csse_covid_19_daily_reports.csv', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x05\x9f\x00\x00\x03\x83\x00\x00\x00\x00\x00\x00\x00+\x00\x00\x05\x9f\x00\x00\x03\xae\x00\x00\x00\x00\x02\x00\x00\x00\x05\xa0\x00\x00\x00\x00\x00\x00\x00-\x00\x00\x05\x9f\x00\x00\x03\x83', '__version__': 1}</properties>
+		<properties format="pickle" node_id="17">gAN9cQAoWBIAAABjb250cm9sQXJlYVZpc2libGVxAYhYEwAAAHNhdmVkV2lkZ2V0R2VvbWV0cnlx
+AkNCAdnQywADAAAAAAAAAAAAAAAABZ8AAAODAAAAAAAAAAAAAAWfAAADgwAAAAAABAAABaAAAAAA
+AAAAAAAABZ8AAAODcQNYCwAAAF9fdmVyc2lvbl9fcQRLAVgQAAAAY29udGV4dF9zZXR0aW5nc3EF
+XXEGKGNvcmFuZ2V3aWRnZXQuc2V0dGluZ3MKQ29udGV4dApxBymBcQh9cQkoWAQAAAB0aW1lcQpH
+QdeecAD/RHhYBgAAAHZhbHVlc3ELfXEMKFgMAAAAY3VycmVudEluZGV4cQ1LAEr+////hnEOWAsA
+AABkZXNjcmlwdG9yc3EPXXEQY09yYW5nZS53aWRnZXRzLmRhdGEub3dmZWF0dXJlY29uc3RydWN0
+b3IKQ29udGludW91c0Rlc2NyaXB0b3IKcRFYBgAAAEFjdGl2ZXESWF8AAAB0aW1lX3Nlcmllc18x
+OV9jb3ZpZF9Db25maXJtZWQgLSAodGltZV9zZXJpZXNfMTlfY292aWRfRGVhdGhzICsgdGltZV9z
+ZXJpZXNfMTlfY292aWRfUmVjb3ZlcmVkKXETSwOHcRSBcRVhaARLAXVYCgAAAGF0dHJpYnV0ZXNx
+Fn1xFyhYDgAAAFByb3ZpbmNlL1N0YXRlcRhLAVgOAAAAQ291bnRyeS9SZWdpb25xGUsBWAMAAABM
+YXRxGksCWAQAAABMb25ncRtLAlgEAAAARGF0ZXEcSwRYHgAAAHRpbWVfc2VyaWVzXzE5LWNvdmlk
+LUNvbmZpcm1lZHEdSwJYHgAAAHRpbWVfc2VyaWVzXzE5LWNvdmlkLVJlY292ZXJlZHEeSwJYGwAA
+AHRpbWVfc2VyaWVzXzE5LWNvdmlkLURlYXRoc3EfSwJ1WAUAAABtZXRhc3EgfXEhdWJoBymBcSJ9
+cSMoaApHQdeeb/2VS/FoC31xJChoDUsASv7///+GcSVoD11xJmgRWAYAAABBY3RpdmVxJ1ggAAAA
+Q29uZmlybWVkIC0gKERlYXRocyArIFJlY292ZXJlZClxKEsDh3EpgXEqYWgESwF1aBZ9cSsoWAkA
+AABDb25maXJtZWRxLEsCWAkAAABSZWNvdmVyZWRxLUsCWAYAAABEZWF0aHNxLksCWAgAAABMYXRp
+dHVkZXEvSwJYCQAAAExvbmdpdHVkZXEwSwJ1aCB9cTEoWAsAAABMYXN0IFVwZGF0ZXEySwNYDgAA
+AENvdW50cnkvUmVnaW9ucTNLA1gOAAAAUHJvdmluY2UvU3RhdGVxNEsDWBEAAABpbnB1dF9maWxl
+X25hbWUoKXE1SwN1dWJldS4=
+</properties>
+		<properties format="literal" node_id="18">{'autocommit': True, 'controlAreaVisible': True, 'radio_sequential': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02-\x00\x00\x01M\x00\x00\x03\xd6\x00\x00\x02\x12\x00\x00\x02-\x00\x00\x01c\x00\x00\x03^\x00\x00\x02\x12\x00\x00\x00\x00\x02\x00\x00\x00\x05\xa0\x00\x00\x02-\x00\x00\x01c\x00\x00\x03\xd6\x00\x00\x02\x12', 'selected_attr': 'Date', '__version__': 1}</properties>
+		<properties format="literal" node_id="19">{'autoapply': True, 'controlAreaVisible': True, 'interpolation': 'linear', 'multivariate': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02,\x00\x00\x01P\x00\x00\x03_\x00\x00\x02\x10\x00\x00\x02,\x00\x00\x01f\x00\x00\x03_\x00\x00\x02\x10\x00\x00\x00\x00\x02\x00\x00\x00\x05\xa0\x00\x00\x02,\x00\x00\x01f\x00\x00\x03_\x00\x00\x02\x10', '__version__': 1}</properties>
+		<properties format="literal" node_id="20">{'agg_attr': [], 'agg_func': 0, 'agg_interval': 'week', 'autocommit': True, 'ax1': 'months of year', 'ax2': 'years', 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05\x9f\x00\x00\x03\x83\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05\x9f\x00\x00\x03\x83\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05\x9f\x00\x00\x03\x83', '__version__': 1}</properties>
+		<properties format="literal" node_id="21">{'attrs': {}, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x17\x00\x00\x05\x9f\x00\x00\x03\x83\x00\x00\x00\x00\x00\x00\x00+\x00\x00\x05\x9f\x00\x00\x03\xae\x00\x00\x00\x00\x02\x00\x00\x00\x05\xa0\x00\x00\x00\x00\x00\x00\x00-\x00\x00\x05\x9f\x00\x00\x03\x83', '__version__': 1}</properties>
+		<properties format="pickle" node_id="22">gAN9cQAoWAsAAABhdXRvX2NvbW1pdHEBiFgSAAAAY29udHJvbEFyZWFWaXNpYmxlcQKIWBMAAABz
+YXZlZFdpZGdldEdlb21ldHJ5cQNDQgHZ0MsAAwAAAAAAAAAAABcAAAWfAAADgwAAAAAAAAAAAAAF
+nwAAA4MAAAAAAgAAAAWgAAAAAAAAAC0AAAWfAAADg3EEWBIAAAB1c2VfaW5wdXRfZmVhdHVyZXNx
+BYlYCwAAAF9fdmVyc2lvbl9fcQZLAVgQAAAAY29udGV4dF9zZXR0aW5nc3EHXXEIKGNvcmFuZ2V3
+aWRnZXQuc2V0dGluZ3MKQ29udGV4dApxCSmBcQp9cQsoWAQAAAB0aW1lcQxHQdeecAE85NJYBgAA
+AHZhbHVlc3ENfXEOKFgRAAAAZG9tYWluX3JvbGVfaGludHNxD31xEChYHgAAAHRpbWVfc2VyaWVz
+XzE5LWNvdmlkLUNvbmZpcm1lZHERSwKGcRJYCQAAAGF0dHJpYnV0ZXETSwCGcRRYHgAAAHRpbWVf
+c2VyaWVzXzE5LWNvdmlkLVJlY292ZXJlZHEVSwKGcRZoE0sBhnEXWBsAAAB0aW1lX3Nlcmllc18x
+OS1jb3ZpZC1EZWF0aHNxGEsChnEZaBNLAoZxGlgEAAAARGF0ZXEbSwSGcRxoE0sDhnEdWAYAAABB
+Y3RpdmVxHksChnEfWAUAAABjbGFzc3EgSwCGcSFYDgAAAENvdW50cnkvUmVnaW9ucSJLAYZxI1gE
+AAAAbWV0YXEkSwCGcSVYDgAAAFByb3ZpbmNlL1N0YXRlcSZLAYZxJ2gkSwGGcShYAwAAAExhdHEp
+SwKGcSpoJEsChnErWAQAAABMb25ncSxLAoZxLWgkSwOGcS51Sv7///+GcS9oBksBdVgKAAAAYXR0
+cmlidXRlc3EwfXExKFgEAAAARGF0ZXEySwRYDgAAAFByb3ZpbmNlL1N0YXRlcTNLAVgOAAAAQ291
+bnRyeS9SZWdpb25xNEsBWAMAAABMYXRxNUsCWAQAAABMb25ncTZLAlgeAAAAdGltZV9zZXJpZXNf
+MTktY292aWQtQ29uZmlybWVkcTdLAlgeAAAAdGltZV9zZXJpZXNfMTktY292aWQtUmVjb3ZlcmVk
+cThLAlgbAAAAdGltZV9zZXJpZXNfMTktY292aWQtRGVhdGhzcTlLAlgGAAAAQWN0aXZlcTpLAnVY
+BQAAAG1ldGFzcTt9cTx1YmgJKYFxPX1xPihoDEdB155v/ZuxW2gNfXE/KGgPfXFAKFgJAAAAQ29u
+ZmlybWVkcUFLAoZxQmgTSwCGcUNYCQAAAFJlY292ZXJlZHFESwKGcUVoE0sBhnFGWAYAAABEZWF0
+aHNxR0sChnFIaBNLAoZxSVgIAAAATGF0aXR1ZGVxSksChnFLaBNLA4ZxTFgJAAAATG9uZ2l0dWRl
+cU1LAoZxTmgTSwSGcU9YBgAAAEFjdGl2ZXFQSwKGcVFoE0sFhnFSWAsAAABMYXN0IFVwZGF0ZXFT
+SwOGcVRoJEsAhnFVWA4AAABDb3VudHJ5L1JlZ2lvbnFWSwOGcVdoJEsBhnFYWA4AAABQcm92aW5j
+ZS9TdGF0ZXFZSwOGcVpoJEsChnFbWBEAAABpbnB1dF9maWxlX25hbWUoKXFcSwOGcV1oJEsDhnFe
+dUr+////hnFfaAZLAXVoMH1xYChoQUsCaERLAmhHSwJoSksCaE1LAmhQSwJ1aDt9cWEoaFNLA2hW
+SwNoWUsDaFxLA3V1YmV1Lg==
+</properties>
+		<properties format="literal" node_id="23">{'autocommit': True, 'controlAreaVisible': True, 'd': 0, 'forecast_confint': 95, 'forecast_steps': 10, 'learner_name': '', 'p': 1, 'q': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\x1a\x00\x00\x00\xf0\x00\x00\x03r\x00\x00\x02p\x00\x00\x02\x1a\x00\x00\x01\x06\x00\x00\x03r\x00\x00\x02p\x00\x00\x00\x00\x02\x00\x00\x00\x05\xa0\x00\x00\x02\x1a\x00\x00\x01\x06\x00\x00\x03r\x00\x00\x02p', 'use_exog': False, '__version__': 1}</properties>
+		<properties format="literal" node_id="24">{'autocommit': True, 'controlAreaVisible': True, 'forecast_confint': 99, 'forecast_steps': 10, 'ic': 0, 'learner_name': '', 'maxlags': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x026\x00\x00\x00y\x00\x00\x03U\x00\x00\x02\xe6\x00\x00\x026\x00\x00\x00\x8f\x00\x00\x03U\x00\x00\x02\xe6\x00\x00\x00\x00\x02\x00\x00\x00\x05\xa0\x00\x00\x026\x00\x00\x00\x8f\x00\x00\x03U\x00\x00\x02\xe6', 'trend': 0, '__version__': 1}</properties>
+		<properties format="literal" node_id="25">{'_session_items': [('/Users/zacharywilson/Projects/repos/pandemic/work/samples/jobs.csse_covid_19_time_series.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 1, 'value': 'Skip'}, {'start': 1, 'stop': 3, 'value': 'Categorical'}, {'start': 3, 'stop': 5, 'value': 'Numeric'}, {'start': 5, 'stop': 6, 'value': 'Time'}, {'start': 6, 'stop': 9, 'value': 'Numeric'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('/Users/zacharywilson/Projects/repos/pandemic/work/samples/jobs.csse_covid_19_daily_reports.csv/part-00003-7443deab-e856-470e-937b-8bb9e826879a-c000.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('/Users/zacharywilson/Projects/repos/pandemic/work/samples/jobs.csse_covid_19_daily_reports.csv/part-00003-6456cdc9-89f2-4af6-af05-f0361fee0836-c000.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('/Users/zacharywilson/Projects/repos/pandemic/work/samples/csse_covid_19_daily_reports.csv/part-00003-3fc99477-8462-42bc-ba9c-e658cc083435-c000.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''}), ('/Users/zacharywilson/Projects/repos/pandemic/work/samples/output-files/csse_covid_19_daily_reports.csv/part-00003-57c068c9-a601-4449-8ff6-aec3f9953fdc-c000.csv', {'encoding': 'utf-8', 'delimiter': ',', 'quotechar': '"', 'doublequote': True, 'skipinitialspace': True, 'quoting': 0, 'columntypes': [{'start': 0, 'stop': 9, 'value': 'Auto'}], 'rowspec': [{'start': 0, 'stop': 1, 'value': 'Header'}], 'decimal_separator': '.', 'group_separator': ''})], 'controlAreaVisible': True, 'dialog_state': {'directory': '/Users/zacharywilson/Projects/repos/pandemic/work/samples', 'filter': 'Text - comma separated (*.csv, *)'}, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02#\x00\x00\x00\xf8\x00\x00\x03h\x00\x00\x02g\x00\x00\x02#\x00\x00\x01\x0e\x00\x00\x03h\x00\x00\x02g\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0\x00\x00\x02#\x00\x00\x01\x0e\x00\x00\x03h\x00\x00\x02g', '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
