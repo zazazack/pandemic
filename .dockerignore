@@ -134,6 +134,5 @@ samples/**
 metastore_db/
 spark-warehouse/
 
-*.zip
-.vscode/
-
+work/
+/.vscode/

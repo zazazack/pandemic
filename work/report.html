@@ -1,0 +1,158 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <title>Orange Report</title>
+
+    <style>
+    html, body, table {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        margin:0px;
+        padding:0;
+        border:0 none;
+    }
+
+    h1, h2 , h3, h4, h5 {
+       padding: 1px;
+       font-size:100%;
+    }
+
+    h1 {
+        color: white;
+        background-color: black;
+        padding: 4px;
+        margin-top: 12px;
+        margin-bottom: 6px;
+    }
+
+    h2 {
+        border-bottom: 1px solid black;
+        padding-left: 2px;
+    }
+
+    ul, table, p {
+        padding: 10px;
+    }
+
+    table {
+        margin-left: -6px;
+    }
+
+    span.timestamp {
+        position: absolute;
+        right: 40px;
+        color:#ddd;
+    }
+
+    div.selected, div.normal {
+        margin: 5px;
+    }
+
+    div.selected {
+        background: #ddd;
+    }
+    @media print{
+        div.selected {
+            background: inherit;
+        }
+        ::-webkit-input-placeholder {
+            color: transparent;
+        }
+    }
+
+    div.content {
+        margin-left: 15px;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 2px 6px 2px 6px;
+    }
+
+    th {
+        font-weight: bold;
+    }
+
+    @media screen {
+        td, th {
+            white-space: nowrap;
+        }
+    }
+
+    .caption {
+        text-align: center;
+        font-size: 90%;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        max-height: 20cm;
+    }
+
+    span.legend-square {
+        width: 1em;
+        height: 1em;
+        margin-right: 6px;
+        display: inline-block;
+    }
+
+    span.legend-item {
+        margin-right: 24px;
+    }
+
+    textarea {
+        border: 1px solid silver;
+        font-style: italic;
+        width: 100%;
+        height: 4em;
+    }
+
+    .textwrapper {
+        padding: 15px;
+    }
+
+    div.normal textarea:invalid {
+        display: none;
+    }
+
+    div.selected textarea {
+        display: block;
+    }
+
+    @media print{
+        section.section, img {
+            page-break-inside: avoid;
+        }
+    }
+    </style>
+
+
+</head><body>
+
+ 
+
+<div id="5392011768" class="normal" onclick="pybridge._select_item(this.id)"><section class="section"><h1>Concatenate <span class="timestamp">Mon Mar 23 20, 14:53:35</span></h1><div class="content">
+<ul><b>Domain:</b> union of attributes appearing in all tables<br><b>Source data ID:</b> Source ID (as meta attribute)<br></ul></div></section>
+
+<div class="textwrapper"><textarea placeholder="Write a comment..." oninput="this.innerHTML = this.value;pybridge._add_comment(this.parentNode.parentNode.id, this.value);"></textarea></div></div><div id="5459457512" class="normal" onclick="pybridge._select_item(this.id)"><section class="section"><h1>Edit Domain <span class="timestamp">Mon Mar 23 20, 14:53:56</span></h1><div class="content">
+<ul><li><div style="font-weight: bold;">Last Update → (T) Last Update</div></li><li><div style="font-weight: bold;">Country/Region → (C) Country/Region</div></li><li><div style="font-weight: bold;">Province/State → (C) Province/State</div></li></ul></div></section>
+
+<div class="textwrapper"><textarea placeholder="Write a comment..." oninput="this.innerHTML = this.value;pybridge._add_comment(this.parentNode.parentNode.id, this.value);"></textarea></div></div><div id="5402613656" class="normal" onclick="pybridge._select_item(this.id)"><section class="section"><h1>Apply Domain <span class="timestamp">Mon Mar 23 20, 14:54:23</span></h1><div class="content">
+<h2>Data</h2><ul><b>Data instances:</b> 7926<br><b>Features:</b> Confirmed, Recovered, Deaths, Latitude, Longitude<br><b>Meta attributes:</b> Last Update, Country/Region, Province/State, input_file, Source ID<br></ul><h2>Template data</h2><ul><b>Features:</b> Confirmed, Recovered, Deaths, Latitude, Longitude<br><b>Meta attributes:</b> Last Update, Country/Region, Province/State, input_file, Source ID<br></ul><h2>Transformed data</h2><ul><b>Data instances:</b> 7926<br><b>Features:</b> Confirmed, Recovered, Deaths, Latitude, Longitude<br><b>Meta attributes:</b> Last Update, Country/Region, Province/State, input_file, Source ID<br></ul></div></section>
+
+<div class="textwrapper"><textarea placeholder="Write a comment..." oninput="this.innerHTML = this.value;pybridge._add_comment(this.parentNode.parentNode.id, this.value);"></textarea></div></div><div id="5402615240" class="normal" onclick="pybridge._select_item(this.id)"><section class="section"><h1>Select Columns <span class="timestamp">Mon Mar 23 20, 14:54:44</span></h1><div class="content">
+<h2>Input data</h2><ul><b>Features:</b> Confirmed, Recovered, Deaths, Latitude, Longitude<br><b>Meta attributes:</b> Last Update, Country/Region, Province/State, input_file, Source ID<br></ul><h2>Output data</h2><ul><b>Features:</b> Recovered, Deaths, Last Update<br><b>Meta attributes:</b> Latitude, Longitude, Country/Region, Province/State, input_file, Source ID<br><b>Target:</b> Confirmed<br></ul></div></section>
+
+<div class="textwrapper"><textarea placeholder="Write a comment..." oninput="this.innerHTML = this.value;pybridge._add_comment(this.parentNode.parentNode.id, this.value);"></textarea></div></div><div id="5463641544" class="normal" onclick="pybridge._select_item(this.id)"><section class="section"><h1>Impute <span class="timestamp">Mon Mar 23 20, 14:56:27</span></h1><div class="content">
+<ul><b>Default method:</b> Default (above)<br><b>Specific imputers:</b> Recovered (Value), Deaths (Value), Confirmed (Value)<br></ul></div></section>
+
+<div class="textwrapper"><textarea placeholder="Write a comment..." oninput="this.innerHTML = this.value;pybridge._add_comment(this.parentNode.parentNode.id, this.value);"></textarea></div></div><div id="5392031032" class="normal" onclick="pybridge._select_item(this.id)"><section class="section"><h1>Distances <span class="timestamp">Mon Mar 23 20, 14:57:48</span></h1><div class="content">
+<ul><b>Distances Between:</b> Rows<br><b>Metric:</b> Euclidean<br></ul></div></section>
+
+<div class="textwrapper"><textarea placeholder="Write a comment..." oninput="this.innerHTML = this.value;pybridge._add_comment(this.parentNode.parentNode.id, this.value);"></textarea></div></div><div id="5392029592" class="normal" onclick="pybridge._select_item(this.id)"><section class="section"><h1>VAR Model <span class="timestamp">Mon Mar 23 20, 14:58:01</span></h1><div class="content">
+<ul><b>Name:</b> VAR(1,nc)<br></ul><ul><b>Forecast steps:</b> 10<br><b>Confidence interval:</b> 95<br></ul><h2>Time series</h2><ul><b>Data instances:</b> 8<br><b>Features:</b> Last Update, Recovered, Deaths<br><b>Meta attributes:</b> Latitude, Longitude, Country/Region, Province/State, input_file, Source ID<br><b>Target:</b> Confirmed<br></ul></div></section>
+
+<div class="textwrapper"><textarea placeholder="Write a comment..." oninput="this.innerHTML = this.value;pybridge._add_comment(this.parentNode.parentNode.id, this.value);"></textarea></div></div><div id="5392013208" class="normal" onclick="pybridge._select_item(this.id)"><section class="section"><h1>ARIMA Model <span class="timestamp">Mon Mar 23 20, 14:58:09</span></h1><div class="content">
+<ul><b>Name:</b> ARMA(1,0,0)<br></ul><ul><b>Forecast steps:</b> 10<br><b>Confidence interval:</b> 95<br></ul><h2>Time series</h2><ul><b>Data instances:</b> 8<br><b>Features:</b> Last Update, Recovered, Deaths<br><b>Meta attributes:</b> Latitude, Longitude, Country/Region, Province/State, input_file, Source ID<br><b>Target:</b> Confirmed<br></ul></div></section>
+
+<div class="textwrapper"><textarea placeholder="Write a comment..." oninput="this.innerHTML = this.value;pybridge._add_comment(this.parentNode.parentNode.id, this.value);"></textarea></div></div></body></html>

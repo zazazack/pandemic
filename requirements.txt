@@ -1,0 +1,5 @@
+lxml
+pycountry
+pyspark
+textblob
+pandas
